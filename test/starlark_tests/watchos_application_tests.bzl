@@ -107,7 +107,7 @@ def watchos_application_test_suite(name):
     archive_contents_test(
         name = "{}_contains_stub_executable_test".format(name),
         build_type = "device",
-        target_under_test = "//test/starlark_tests/targets_under_test/watchos:app_companion",
+        target_under_test = "//test/starlark_tests/targets_under_test/watchos:ipa_app_companion",
         contains = [
             "$ARCHIVE_ROOT/WatchKitSupport2/WK",
             "$BUNDLE_ROOT/Watch/app.app/_WatchKitStub/WK",
