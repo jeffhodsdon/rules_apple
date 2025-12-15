@@ -7,6 +7,7 @@ licenses(["notice"])
 py_binary(
     name = "dossier_codesigningtool",
     srcs = ["dossier_codesigningtool.py"],
+    imports = ["../.."],
     python_version = "PY3",
     srcs_version = "PY3",
     visibility = [
@@ -41,6 +42,7 @@ py_test(
 py_binary(
     name = "dossier_codesigning_reader",
     srcs = ["dossier_codesigning_reader.py"],
+    imports = ["../.."],
     python_version = "PY3",
     srcs_version = "PY3",
     visibility = ["//visibility:public"],
@@ -50,6 +52,7 @@ py_binary(
 py_library(
     name = "dossier_codesigning_reader_lib",
     srcs = ["dossier_codesigning_reader.py"],
+    imports = ["../.."],
     srcs_version = "PY3",
 )
 

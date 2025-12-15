@@ -7,6 +7,7 @@ licenses(["notice"])
 py_binary(
     name = "imported_dynamic_framework_processor",
     srcs = ["imported_dynamic_framework_processor.py"],
+    imports = ["../.."],
     python_version = "PY3",
     srcs_version = "PY3",
     visibility = [

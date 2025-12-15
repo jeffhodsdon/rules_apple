@@ -7,6 +7,7 @@ licenses(["notice"])
 py_binary(
     name = "codesigningtool",
     srcs = ["codesigningtool.py"],
+    imports = ["../.."],
     python_version = "PY3",
     srcs_version = "PY3",
     visibility = [

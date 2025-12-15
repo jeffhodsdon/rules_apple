@@ -5,6 +5,7 @@ licenses(["notice"])
 py_binary(
     name = "swift_stdlib_tool",
     srcs = ["swift_stdlib_tool.py"],
+    imports = ["../.."],
     python_version = "PY3",
     srcs_version = "PY3",
     visibility = [

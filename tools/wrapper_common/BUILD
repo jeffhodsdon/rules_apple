@@ -9,6 +9,7 @@ py_library(
         "__init__.py",
         "execute.py",
     ],
+    imports = ["../.."],
     srcs_version = "PY3",
     visibility = [
         "//tools/bitcode_strip:__pkg__",
